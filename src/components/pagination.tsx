@@ -6,7 +6,7 @@ export default function Pagination({ meta, handlePageChange }: {
 }) {
     return <>
         {meta && meta.last_page > 1 && (
-            <div className="flex justify-center mt-6 flex-wrap gap-2">
+            <div className="flex justify-center mt-6 flex-wrap gap-2 text-gray-700">
                 <button
                     disabled={meta.page === 1}
                     onClick={() => handlePageChange(meta.page - 1)}

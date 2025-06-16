@@ -15,7 +15,7 @@ export default function CardGallery({car, currentImageIndex, handleImageChange,}
                 <div className="relative w-full h-48 flex items-center justify-center overflow-hidden">
                     <button
                         onClick={() => handleImageChange(car.unique_id, 'prev')}
-                        className="absolute mix-blend-difference text-gray-300 left-1 p-1 rounded-full text-xl font-bold z-10"
+                        className="absolute mix-blend-difference text-gray-100 left-1 p-1 rounded-full text-xl font-bold z-10"
                     >
                         ◀
                     </button>
@@ -28,7 +28,7 @@ export default function CardGallery({car, currentImageIndex, handleImageChange,}
                     />
                     <button
                         onClick={() => handleImageChange(car.unique_id, 'next')}
-                        className="absolute right-1 p-1 rounded-full mix-blend-difference text-gray-300 text-xl font-bold"
+                        className="absolute right-1 p-1 rounded-full mix-blend-difference text-gray-100 text-xl font-bold"
                     >
                         ▶
                     </button>
