@@ -12,23 +12,23 @@ export default function CardGallery({car, currentImageIndex, handleImageChange,}
     const currentSrc = images[currentIdx] || '';
     return <>
     {images.length ? (
-                <div className="relative w-full h-48 flex items-center justify-center rounded overflow-hidden">
+                <div className="relative w-full h-48 flex items-center justify-center overflow-hidden">
                     <button
                         onClick={() => handleImageChange(car.unique_id, 'prev')}
-                        className="absolute left-1 bg-white p-1 rounded-full shadow hover:bg-gray-200 text-xl font-bold z-10"
+                        className="absolute mix-blend-difference text-gray-300 left-1 p-1 rounded-full text-xl font-bold z-10"
                     >
                         ◀
                     </button>
                     <Image
                         fill={true}
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        sizes="width-100vm"
                         src={currentSrc}
                         alt={`${car.mark_id} ${car.folder_id}`}
-                        className="h-48 object-contain"
+                        className="h-48 object-cover"
                     />
                     <button
                         onClick={() => handleImageChange(car.unique_id, 'next')}
-                        className="absolute right-1 bg-white p-1 rounded-full shadow hover:bg-gray-200 text-xl font-bold"
+                        className="absolute right-1 p-1 rounded-full mix-blend-difference text-gray-300 text-xl font-bold"
                     >
                         ▶
                     </button>
