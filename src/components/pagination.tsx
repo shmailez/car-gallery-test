@@ -27,7 +27,7 @@ export default function Pagination({ meta, handlePageChange }: {
                         <button
                         onClick={() => handlePageChange(p)}
                         className={`px-3 py-1 rounded ${
-                            p === meta.page ? 'bg-blue-600 text-white' : 'bg-white'
+                            p === meta.page ? 'bg-violet-800 text-white' : 'bg-white'
                         }`}
                         >
                         {p}
